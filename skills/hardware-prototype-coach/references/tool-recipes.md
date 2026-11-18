@@ -8,6 +8,14 @@ Start with appearance and the experience of using the object. Use available imag
 
 If this environment has no image generator, create a simple viewable SVG/HTML sketch board without CAD dependencies. Show or open it using supported tools, or give a direct local file link if preview is unavailable. Say it is a concept sketch. Do not claim a visual was shown if only a text prompt was written. Ask the person what they like or would change, then iterate. Save the selected visual and the design decisions with the project. Do not infer real internal dimensions or working hardware from an attractive generated picture.
 
+### An image API the person already uses
+
+In an environment without a built-in image tool (Claude Code was one on 18 November 2026), an image API the person already has a key for is an image tool. Ask where the key lives instead of searching their disk; read it at run time, never print it, write it into project files or send it anywhere but that API. Keep scripts that call the API outside the project folder.
+
+- Concepts: one request per direction, run in parallel; describe silhouette, size, materials, the interaction and the visible text, and ask for no logos.
+- From the CAD: send a CAD render as the input image and ask to keep the exact geometry. This gives a better picture of the real shape than a concept prompt.
+- Check every generated image against the CAD before showing it as the object: count keys, screens, ports and windows, and read the text. In one session a model drew eight keys in two rows from a render with four in one row, and labelled the wrong part in an exploded view. Regenerate once with the count stated outright, then say under the image where it still differs.
+
 ## Editable enclosure or mechanical object
 
 CadQuery is a Python CAD library. Version 2.6.1 was used for the supplied example.
@@ -58,6 +66,23 @@ These patterns each caught a fault in a session on 18 November 2026 that a plain
 - For moving parts, check the end positions and the poses where parts come closest, in each state of the other moving parts. Record the range of motion that was not examined; sampled poses are not a full sweep.
 - Import each exported file again and compare its size and volume with the report.
 - When a margin improves and the design did not change, the check changed. Read the check before trusting the number.
+
+More patterns from a second session on 18 November 2026, a sloped console taken through seven revisions:
+
+- A part that must sit on a board can pass every collision check while hanging off its edge. Check it against the board outline: switches against the key board after the pitch changed.
+- Sample the assembly path, not only the final pose: move the part back along its insertion direction in a few steps and check each pose. A key block cleared everything in place and hit microphone guide ribs 2 mm before it.
+- A plug envelope placed on the wrong layer collides with glass that the real plug never reaches; when a collision is tiny, find where it is before changing the design.
+- A check computed from the same numbers that built the geometry always passes. Measure the solid instead, for example by intersecting a small probe box with it.
+
+## Interactive model page
+
+A page where the person can rotate the assembly, explode it, cut a section and switch parts on and off explains the layout faster than renders.
+
+- Export the assembly to glTF from CadQuery with one named, coloured node per part: `cadquery.occ_impl.exporters.assembly.exportGLTF(assy, "assembly.glb", binary=True)`. The file stays in millimetres; its root node carries the Z-up to Y-up rotation, so explode vectors written in CAD coordinates apply directly to the child nodes' positions.
+- In the page, three.js with `GLTFLoader` and `OrbitControls`, pinned to an exact version; a clipping plane gives the section view.
+- Some publishing hosts refuse `.glb` files: wrap the bytes as base64 in a JSON file and parse them with `GLTFLoader.parse`. For sharing without a host, inline the model and images into one HTML file; check that it opens from a `file://` URL.
+- Draw plan views and sections from the same solids (intersect each with a thin slab and fill its triangles) so they cannot disagree with the model.
+- The matplotlib renderer used for quick previews sorts triangles per object and can draw a board over a screen in front of it. Hide parts that do not need to be seen, or use the page.
 
 ## Circuit design with Diode
 

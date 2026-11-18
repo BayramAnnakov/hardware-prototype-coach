@@ -24,7 +24,7 @@ my-prototype.
 ## What is inside
 
 - `skills/hardware-prototype-coach/SKILL.md` - the process the agent follows.
-- `skills/hardware-prototype-coach/references/` - tool recipes (CadQuery, Diode `pcb`, quick physical estimates), redesign cards, the step from checked CAD to a printable sample, and fabrication options.
+- `skills/hardware-prototype-coach/references/` - tool recipes (CadQuery, Diode `pcb`, quick physical estimates, images from an image API, an interactive model page), redesign cards, the step from checked CAD to a printable sample, fabrication options, parts and power (real envelopes, pin and bus budget, runtime, heat), and a bill of materials with cost.
 - `reference/` - a finished example, a desk timer: enclosure source, STEP and STL exports, a small circuit, a behaviour replay and its passport.
 
 ## What it does and does not establish
