@@ -4,7 +4,7 @@
 
 ## Запустите коуча
 
-Распакуйте папку. Откройте **новую сессию Fable или Astra** с доступом к этой папке. Вставьте:
+Клонируйте репозиторий https://github.com/BayramAnnakov/hardware-prototype-coach (или распакуйте ZIP). Откройте **новую сессию Fable или Astra** с доступом к этой папке. Вставьте:
 
 ```text
 Прочитай skills/hardware-prototype-coach/SKILL.md и используй этот

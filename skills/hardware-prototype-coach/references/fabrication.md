@@ -19,7 +19,7 @@ For an enclosure, request a first fit sample before committing to several finish
 
 ## An instant quote is also a check
 
-With the person's approval for the upload, an instant-quote page answers several questions before any order. Exercised on Craftcloud on 18 November 2026, for one object of five parts and about 64 cm³, delivered to the United States:
+With the person's approval for the upload, an instant-quote page answers several questions before any order. Exercised on Craftcloud on 18 November 2026, for one object of five parts and about 64 cm³, delivered to the United States. The object was the 80 mm ball-shaped shell described in [printable sample](printable-sample.md), not the desk timer in this kit:
 
 - The page asked for location, currency and the unit of the files. Its confirm button also accepted the service's terms of use; treat that as a separate consent.
 - It showed the size and volume of each file. Compare them with the CAD report: a unit error shows here.

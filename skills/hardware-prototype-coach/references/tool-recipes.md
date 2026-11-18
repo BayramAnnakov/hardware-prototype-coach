@@ -17,7 +17,7 @@ uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python cadquery==2.6.1
 ```
 
-Use the corresponding `.venv\Scripts\python.exe` path on Windows; that platform was not exercised in the host rehearsal. If `uv` is unavailable, use the person's existing Python environment rather than silently changing their global installation.
+Use the corresponding `.venv\Scripts\python.exe` path on Windows; that platform was not exercised in the host rehearsal. If `uv` is unavailable, create the project `.venv` with the person's existing Python (`python -m venv .venv`) and install only there. If the project `.venv` cannot import CadQuery, stop installing: do not install into any other environment, and continue with the no-CAD fallback in the skill.
 
 A minimal modelling/export pattern:
 
@@ -44,9 +44,9 @@ The reference renderer uses matplotlib as well as CadQuery; install its `require
 Use these to find a problem early. Name each as an estimate in the report; none is a simulation or a measurement.
 
 - **Sound path to a microphone:** a tube that is closed at the microphone and open to the outside resonates near `f = c / (4 * L)`, with `c` about 343,000 mm/s and `L` the effective length in mm: the tube length plus about 0.6 of the opening radius. A 25 mm path gives about 3.4 kHz, inside the voice band. A path of about 8 mm or less stays near or above 8 kHz. This is an approximate resonance, not a guarantee. Keep microphones close to the outer surface.
-- **A hole that opens into a cavity:** choose the model from the geometry, not from the part list. A microphone behind a cavity with one or more holes to the outside is closer to a Helmholtz resonator: `f = c / (2 * pi) * sqrt(A / (V * L))`, with `A` the total hole area, `V` the cavity volume and `L` the hole depth plus about 1.7 hole radii. It assumes equal holes and a cavity that is small against the wavelength. Example: 24 holes of 2 mm through a 2 mm plate above a 13.3 cm³ cavity give about 2.1 kHz, where the tube formula on the 9 mm depth alone gave about 9.5 kHz. A short sealed port for each microphone avoids the shared cavity.
-- **Wall thickness:** a wall drawn as a fixed radial or vertical offset becomes thinner where the surface slopes. Measure the shortest distance between the outer and inner surfaces.
-- **Fit between two printed parts:** each part can be off by the accuracy that the service states. The nominal clearance on diameter, minus the tolerance of the hole, minus the tolerance of the shaft, must leave the running clearance that the fit needs. This is a simple stack, not a promise of a smooth fit; a first sample decides.
+- **A hole that opens into a cavity:** choose the model from the geometry, not from the part list. A microphone behind a cavity with one or more holes to the outside is closer to a Helmholtz resonator: `f = c / (2 * pi) * sqrt(A / (V * L))`, with `c` in mm/s, `A` the total hole area in mm², `V` the cavity volume in mm³ and `L` in mm: the hole depth plus about 1.7 hole radii. It assumes equal holes and a cavity that is small against the wavelength. Example: 24 holes of 2 mm through a 2 mm plate above a 13.3 cm³ cavity give about 2.1 kHz, where the tube formula on the 9 mm depth alone gave about 9.5 kHz. A short sealed port for each microphone avoids the shared cavity.
+- **Wall thickness:** a wall drawn as a horizontal or vertical shift of the profile becomes thinner where the surface slopes; an offset along the surface normal does not. Measure the shortest distance between the outer and inner surfaces.
+- **Fit between two printed parts:** each part can be off by the accuracy that the service states. Convert that accuracy to millimetres first: the larger of the stated percentage of the dimension and the stated lower limit. The nominal clearance on diameter, minus the tolerance of the hole, minus the tolerance of the shaft, must leave the running clearance that the fit needs. This is a simple stack, not a promise of a smooth fit; a first sample decides.
 - **Charge time:** battery capacity in mAh divided by charge current in mA gives hours for an ideal constant current. Real charging tapers near the end and takes longer. Also confirm that the charge current is within the limit in the cell's datasheet. Check the charge current of the selected board before choosing a battery size.
 
 ## Checks that found real faults

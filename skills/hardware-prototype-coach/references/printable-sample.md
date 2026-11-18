@@ -8,7 +8,7 @@ Say which question the sample answers: how the object looks and feels, whether b
 
 ## What the parts need that checked CAD did not have
 
-- **A wall of even thickness.** Offset the surface along its normal. A wall drawn as a radial or vertical offset becomes thin where the surface slopes: 3 mm drawn was about 1.1 mm at one place.
+- **A wall of even thickness.** Offset the surface along its normal; that offset does not thin. A wall drawn as a horizontal or vertical shift of the profile becomes thin where the surface slopes: on one curved shell, 3 mm drawn horizontally was about 1.1 mm near the top.
 - **A joint between shells,** and a decision on which shell carries the lip. Put the split where the opening is widest, so that the largest internal part goes in without tilting.
 - **Something that holds every internal part:** a seat, posts or rails. A part that passes a collision check can still float in mid-air.
 - **An assembly order,** checked step by step: each part must pass through the opening that exists at that step.
@@ -18,11 +18,11 @@ Say which question the sample answers: how the object looks and feels, whether b
 
 ## Limits come from the process
 
-Read the accuracy and the minimum wall that the service states for the chosen material, and derive the clearances from them. Two printed parts can each be off by the stated accuracy, so a sliding or push fit needs more than twice that accuracy on diameter. That is a simple stack; a first sample decides whether the fit runs. Accuracy does not give the smallest hole that stays open: read the minimum hole size for the process separately, or record it as unknown. Example values and their source are in [fabrication options](fabrication.md).
+Read the accuracy and the minimum wall that the service states for the chosen material, and derive the clearances from them. Convert the accuracy to millimetres first: the larger of the stated percentage of the dimension and the stated lower limit. Two printed parts can each be off by the stated accuracy, so a sliding or push fit needs more than twice that accuracy on diameter. That is a simple stack; a first sample decides whether the fit runs. Accuracy does not give the smallest hole that stays open: read the minimum hole size for the process separately, or record it as unknown. Example values and their source are in [fabrication options](fabrication.md).
 
 ## Look before fabrication
 
-Features added for printing change the object: lugs, seams, screw heads, feet. Show the printable parts from the front and from the side the person will see most. A hinge axis decides which face of a flap the viewer sees in each pose. When an image tool is available, an image made from the CAD view shows surface, colour and scale better than a CAD render does; list where it differs from the CAD. Get the person's yes to this object, not to the earlier concept.
+Features added for printing change the object: lugs, seams, screw heads, feet. Show the printable parts from the front and from the side the person will see most. A hinge axis decides which face of a flap the viewer sees in each pose. When an image tool is available, an image made from the CAD view shows surface, colour and character better than a CAD render does. Scale, holes and dimensions come from the CAD view only; list where the image differs from the CAD. Get the person's yes to this object, not to the earlier concept.
 
 ## Still unknown after this
 
