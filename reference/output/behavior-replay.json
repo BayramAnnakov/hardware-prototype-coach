@@ -1,0 +1,80 @@
+{
+  "basis": "pure timer state machine; no GPIO or physical hardware",
+  "passed": true,
+  "events": [
+    {
+      "event": "idle",
+      "mode": "idle",
+      "remaining_ms": 1000,
+      "lights": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "event": "start-and-elapse",
+      "mode": "running",
+      "remaining_ms": 650,
+      "lights": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "event": "pause-freezes-time",
+      "mode": "paused",
+      "remaining_ms": 650,
+      "lights": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "event": "resume-to-exact-deadline",
+      "mode": "done",
+      "remaining_ms": 0,
+      "lights": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "event": "restart-after-completion",
+      "mode": "running",
+      "remaining_ms": 1000,
+      "lights": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "event": "long-step-clamped-at-zero",
+      "mode": "done",
+      "remaining_ms": 0,
+      "lights": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "event": "reset",
+      "mode": "idle",
+      "remaining_ms": 1000,
+      "lights": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "event": "negative-time-rejected",
+      "passed": true
+    }
+  ]
+}

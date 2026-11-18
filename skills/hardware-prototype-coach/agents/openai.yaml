@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hardware Prototype Coach"
+  short_description: "Invent a device, model it, and prepare a prototype"
+  default_prompt: "Use $hardware-prototype-coach to help me invent and design my own physical prototype."

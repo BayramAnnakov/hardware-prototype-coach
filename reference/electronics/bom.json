@@ -1,0 +1,149 @@
+[
+  {
+    "designators": [
+      "D1"
+    ],
+    "quantity": 1,
+    "members": [
+      {
+        "path": "D1.LED",
+        "designator": "D1",
+        "package": "1206",
+        "value": "LED RED",
+        "description": "LED RED",
+        "component_type": "Led",
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "designators": [
+      "D2"
+    ],
+    "quantity": 1,
+    "members": [
+      {
+        "path": "D2.LED",
+        "designator": "D2",
+        "package": "1206",
+        "value": "LED AMBER",
+        "description": "LED AMBER",
+        "component_type": "Led",
+        "color": "amber"
+      }
+    ]
+  },
+  {
+    "designators": [
+      "D3"
+    ],
+    "quantity": 1,
+    "members": [
+      {
+        "path": "D3.LED",
+        "designator": "D3",
+        "package": "1206",
+        "value": "LED GREEN",
+        "description": "LED GREEN",
+        "component_type": "Led",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "designators": [
+      "J1"
+    ],
+    "quantity": 1,
+    "members": [
+      {
+        "path": "J1.PH",
+        "designator": "J1",
+        "package": "PinHeader_1x05_P2.54mm_Vertical",
+        "value": "2.54mm 5 x 1 THT Vertical Male",
+        "description": "2.54mm 5 x 1 THT Vertical Male",
+        "component_type": "PinHeader",
+        "pitch": "2.54mm",
+        "rows": 1,
+        "pins": 5,
+        "orientation": "Vertical",
+        "gender": "Male",
+        "mount": "THT"
+      }
+    ]
+  },
+  {
+    "designators": [
+      "J2"
+    ],
+    "quantity": 1,
+    "members": [
+      {
+        "path": "J2.PH",
+        "designator": "J2",
+        "package": "PinHeader_1x02_P2.54mm_Vertical",
+        "value": "2.54mm 2 x 1 THT Vertical Male",
+        "description": "2.54mm 2 x 1 THT Vertical Male",
+        "component_type": "PinHeader",
+        "pitch": "2.54mm",
+        "rows": 1,
+        "pins": 2,
+        "orientation": "Vertical",
+        "gender": "Male",
+        "mount": "THT"
+      }
+    ]
+  },
+  {
+    "designators": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "quantity": 3,
+    "members": [
+      {
+        "path": "R1.R",
+        "designator": "R1",
+        "package": "0603",
+        "value": "1k",
+        "description": "1k",
+        "component_type": "Resistor",
+        "resistance": {
+          "nominal": "1000",
+          "min": "1000",
+          "max": "1000",
+          "unit": "Ohms"
+        }
+      },
+      {
+        "path": "R2.R",
+        "designator": "R2",
+        "package": "0603",
+        "value": "1k",
+        "description": "1k",
+        "component_type": "Resistor",
+        "resistance": {
+          "nominal": "1000",
+          "min": "1000",
+          "max": "1000",
+          "unit": "Ohms"
+        }
+      },
+      {
+        "path": "R3.R",
+        "designator": "R3",
+        "package": "0603",
+        "value": "1k",
+        "description": "1k",
+        "component_type": "Resistor",
+        "resistance": {
+          "nominal": "1000",
+          "min": "1000",
+          "max": "1000",
+          "unit": "Ohms"
+        }
+      }
+    ]
+  }
+]

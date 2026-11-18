@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.cache/
+my-prototype/
+*.log
+*.kicad_prl
+fp-lib-table

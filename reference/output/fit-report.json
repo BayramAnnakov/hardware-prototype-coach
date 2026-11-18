@@ -1,0 +1,612 @@
+{
+  "units": "mm",
+  "basis": "nominal envelope checks; see design.json evidence",
+  "assembly_dimensions_mm": [
+    76.0,
+    46.0,
+    28.0
+  ],
+  "passed": true,
+  "checks": [
+    {
+      "name": "body-valid-solid",
+      "passed": true,
+      "measured": 1,
+      "unit": "solids"
+    },
+    {
+      "name": "lid-valid-solid",
+      "passed": true,
+      "measured": 1,
+      "unit": "solids"
+    },
+    {
+      "name": "body-lid-interference",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "usb-opening-clear",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-body-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-body-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-neck-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-neck-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-cap-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-cap-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-nut-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-nut-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J1-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J1-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J2-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J2-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "led-0-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "led-0-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "led-1-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "led-1-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "led-2-clear-of-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "led-2-clear-of-lid",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-carrier",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-button-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-button-neck",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-button-cap",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-button-nut",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-header-J1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-header-J2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-led-0",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-led-1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-clear-of-led-2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-button-body",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-button-neck",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-button-cap",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-button-nut",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-header-J1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-header-J2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-led-0",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-led-1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "carrier-clear-of-led-2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-body-clear-of-button-neck",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-body-clear-of-button-cap",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-body-clear-of-button-nut",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-body-clear-of-header-J1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-body-clear-of-header-J2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-body-clear-of-led-0",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-body-clear-of-led-1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-body-clear-of-led-2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-neck-clear-of-button-cap",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-neck-clear-of-button-nut",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-neck-clear-of-header-J1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-neck-clear-of-header-J2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-neck-clear-of-led-0",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-neck-clear-of-led-1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-neck-clear-of-led-2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-cap-clear-of-button-nut",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-cap-clear-of-header-J1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-cap-clear-of-header-J2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-cap-clear-of-led-0",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-cap-clear-of-led-1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-cap-clear-of-led-2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-nut-clear-of-header-J1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-nut-clear-of-header-J2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-nut-clear-of-led-0",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-nut-clear-of-led-1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "button-nut-clear-of-led-2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J1-clear-of-header-J2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J1-clear-of-led-0",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J1-clear-of-led-1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J1-clear-of-led-2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J2-clear-of-led-0",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J2-clear-of-led-1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "header-J2-clear-of-led-2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "led-0-clear-of-led-1",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "led-0-clear-of-led-2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "led-1-clear-of-led-2",
+      "passed": true,
+      "measured": 0,
+      "unit": "mm3"
+    },
+    {
+      "name": "controller-inside-cavity-xy",
+      "passed": true,
+      "measured": 2.5,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "controller-inside-cavity-z",
+      "passed": true,
+      "measured": 2.0,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "carrier-inside-cavity-xy",
+      "passed": true,
+      "measured": 2.0,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "carrier-inside-cavity-z",
+      "passed": true,
+      "measured": 2.4,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "button-body-inside-cavity-xy",
+      "passed": true,
+      "measured": 7.1,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "button-body-inside-cavity-z",
+      "passed": true,
+      "measured": 2.0,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "button-nut-inside-cavity-xy",
+      "passed": true,
+      "measured": 6.0,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "button-nut-inside-cavity-z",
+      "passed": true,
+      "measured": 0.0,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "header-J1-inside-cavity-xy",
+      "passed": true,
+      "measured": 4.4,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "header-J1-inside-cavity-z",
+      "passed": true,
+      "measured": 4.0,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "header-J2-inside-cavity-xy",
+      "passed": true,
+      "measured": 13.2,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "header-J2-inside-cavity-z",
+      "passed": true,
+      "measured": 4.0,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "led-0-inside-cavity-xy",
+      "passed": true,
+      "measured": 10.2,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "led-0-inside-cavity-z",
+      "passed": true,
+      "measured": 1.6,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "led-1-inside-cavity-xy",
+      "passed": true,
+      "measured": 10.2,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "led-1-inside-cavity-z",
+      "passed": true,
+      "measured": 1.6,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "led-2-inside-cavity-xy",
+      "passed": true,
+      "measured": 10.2,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "led-2-inside-cavity-z",
+      "passed": true,
+      "measured": 1.6,
+      "unit": "mm clearance"
+    },
+    {
+      "name": "button-body-fits-through-panel",
+      "passed": true,
+      "measured": 0.6,
+      "unit": "mm diameter clearance"
+    }
+  ]
+}

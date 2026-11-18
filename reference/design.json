@@ -1,0 +1,18 @@
+{
+  "name": "Desk Timer",
+  "units": "mm",
+  "case": {"width": 76, "depth": 46, "height": 24, "wall": 2, "floor": 2, "lid": 2, "lip_clearance": 0.3},
+  "controller": {"width": 21, "depth": 17.8, "height": 5.6, "x": -23, "y": -8, "z": 4},
+  "carrier": {"width": 36, "depth": 18, "thickness": 1.6, "x": 0, "y": 10, "z": 20},
+  "leds": {"xs": [-12, 0, 12], "y": 10, "aperture_diameter": 4},
+  "button": {"x": 0, "y": -8, "hole_diameter": 12.4, "body_diameter": 11.8, "body_height": 10, "nut_diameter": 14, "nut_height": 2},
+  "electrical": {"gpio_voltage_max": 3.465, "led_forward_voltage_min": 1.6, "resistor_tolerance": 0.05, "branch_limit_ma": 2.0},
+  "evidence": {
+    "controller_xy": "Seeed XIAO RP2040 manufacturer: 21 x 17.8 mm, https://wiki.seeedstudio.com/XIAO-RP2040/",
+    "controller_height_and_usb": "Nominal planning envelopes, not a measured vendor STEP model",
+    "carrier": "Design target; KiCad placement/routing must agree before fabrication",
+    "button": "Generic M12-style panel-button envelope; exact part not selected",
+    "led_voltage": "Conservative design assumption, to replace with the selected LED datasheet",
+    "lid": "Friction-fit concept; retention and print tolerance need a physical sample"
+  }
+}

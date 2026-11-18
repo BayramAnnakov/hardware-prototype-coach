@@ -1,0 +1,32 @@
+"""Three low-current indicators and a panel-button connector.
+
+The XIAO RP2040 controller is an external module connected through J1.
+J2 connects a normally-open panel button. Firmware enables D3's pull-up.
+This file defines connectivity; it does not place or route a PCB.
+"""
+
+Resistor = Module("@stdlib/generics/Resistor.zen")
+Led = Module("@stdlib/generics/Led.zen")
+PinHeader = Module("@stdlib/generics/PinHeader.zen")
+
+GND = Ground()
+RED = Net("D0_RED")
+AMBER = Net("D1_AMBER")
+GREEN = Net("D2_GREEN")
+BUTTON = Net("D3_BUTTON")
+LED_RED_A = Net("LED_RED_A")
+LED_AMBER_A = Net("LED_AMBER_A")
+LED_GREEN_A = Net("LED_GREEN_A")
+
+PinHeader(name="J1", pins=5, mount="THT", P1=RED, P2=AMBER,
+          P3=GREEN, P4=BUTTON, P5=GND)
+PinHeader(name="J2", pins=2, mount="THT", P1=BUTTON, P2=GND)
+
+Resistor(name="R1", value="1kohm", package="0603", P1=RED, P2=LED_RED_A)
+Resistor(name="R2", value="1kohm", package="0603", P1=AMBER, P2=LED_AMBER_A)
+Resistor(name="R3", value="1kohm", package="0603", P1=GREEN, P2=LED_GREEN_A)
+Led(name="D1", package="1206", color="red", A=LED_RED_A, K=GND)
+Led(name="D2", package="1206", color="amber", A=LED_AMBER_A, K=GND)
+Led(name="D3", package="1206", color="green", A=LED_GREEN_A, K=GND)
+
+Board(name="DeskTimer", layers=2, layout_path="eda/DeskTimer")
