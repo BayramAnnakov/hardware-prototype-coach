@@ -21,6 +21,7 @@
 ## Как запустить CAD
 
 ```sh
+cd reference   # из корня набора
 uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python -r requirements.txt
 .venv/bin/python enclosure.py
