@@ -37,6 +37,8 @@ Agree on the proof for this session: ask what the person most wants to show at t
 - **Device using existing modules:** a controller/sensor/display selected from actual manufacturer documentation, a connection plan, a suitable enclosure, and the smallest behavior demonstration.
 - **Custom circuit board:** a schematic/netlist and checks, followed by layout when the tools and time support it. Use this route when it adds value to the idea; it is not required of a beginner. Optionally, if the person wants to learn circuit design itself, choose one small circuit early and carry it through compile, layout, checks and a fit of its exported STEP in the CAD; existing modules do the rest.
 
+When a new requirement changes what you can check now, revisit the result you chose. Keep the parts of the build you can still check, and say what measurement or decision the rest needs. A device can show one behavior on a supported supply while its battery circuit is checked separately. Agree on a different result with the person if it changes what they will get.
+
 Name the element that makes this object itself and that nobody has verified: a mechanism, a hinge, a sound or light path, a custom fit. Show or check that element by itself first, with a section view, motion check or estimate, before another revision of the whole enclosure. If it stays a placeholder volume, say so in the passport.
 
 For a workshop, protect time to make and change the object. Before a step that runs for more than a moment, say in one line what is being built. Keep context gathering and part searches bounded; a nominal component envelope may unblock the first CAD iteration if it is labelled as an assumption and kept separate from measured geometry.
@@ -64,6 +66,8 @@ For an open-ended challenge such as one-handed use, use a plausible interaction 
 ## End with a prototype passport
 
 Leave a compact handoff alongside the files. Keep one current handoff: its top states the current revision, and older revisions are history below it. Tie every quote to the exact files it priced.
+
+Name the first action the person can take and point to the files for it. For a print or board quote, [check the copy they will use](references/fabrication.md#check-the-files-for-the-first-step).
 
 - One sentence describing the purpose and intended interaction, plus a preview.
 - Editable source, units and dimensions; STEP/STL when applicable.

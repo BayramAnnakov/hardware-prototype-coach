@@ -33,6 +33,10 @@ A quote means that the files parsed and a price exists. It is not a manufacturab
 
 PCBWay lists Gerber fabrication files, BOM, pick-and-place data, enclosure files and assembly instructions for a complete box-build quote. Ask explicitly whether firmware loading, functional testing and the requested quantity are included. A compiled Zener file or an unrouted KiCad board is not this package.
 
+## Check the files for the first step
+
+Open the folder the person will receive, or unpack the archive into an empty directory. Follow the first step in the instructions as far as the files allow. For a fit sample, find each named part and fastener and check that the print files use the stated units. For a board quote, check that the fabrication files, drill data and any assembly files the supplier needs belong to the board revision being quoted. Include the process requirements that affect the quote. If something is missing, name it and say what the person can do with the files they have.
+
 ## A gift or a shared batch
 
 If the maker wants a gift, add recipient-specific size, texture, colors or personalization to their concept. Do not replace the idea with a generic holiday gadget. For December 25, work backward from the supplier's quoted arrival date and leave room for a first sample and revision. No Christmas cutoff or delivery commitment was verified in this research.
